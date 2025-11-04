@@ -33,7 +33,8 @@ public class Aula9 {
                 break;
             default:
                 System.out.println("Seu animal de teta, digitou errado >:(");
-                break;
+                break;                  
+
         }
 
     }
