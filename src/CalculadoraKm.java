@@ -62,7 +62,10 @@ public class CalculadoraKm {
 
         gastoCombusR = valorC * kmLRTotal;
 
-        System.out.println();
+        System.out.println("O " + carro);
+        System.out.println("O tanque ou bateria comporta " +tanque);
+        System.out.println("Ele gasta " + kmLUTotal + " em combustível em trajeto urbano");
+        System.out.println(" E ele gasta " + kmLRTotal + " em combustível em trajeto rodoviario");
 
     }
 }
