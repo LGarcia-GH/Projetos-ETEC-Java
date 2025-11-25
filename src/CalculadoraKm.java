@@ -5,9 +5,9 @@ public class CalculadoraKm {
 
         Scanner ler = new Scanner(System.in);
 
-        String carro, valorC;
+        String carro;
         int combustivel;
-        Double kmLU, kmLR, tanque, gastoCombusU, gastoCombusR, kmLUTotal, kmLRTotal;
+        double kmLU, kmLR, tanque, gastoCombusU, gastoCombusR, kmLUTotal, kmLRTotal, valorC = 0;
 
         System.out.println("Digite o nome do veiculo: ");
         carro = ler.nextLine();
@@ -32,37 +32,35 @@ public class CalculadoraKm {
 
         switch (combustivel) {
             case 1:
-                valorC = "6.16";
+                valorC = 6.16;
                 break;
             case 2:
-                valorC = "4.29";
+                valorC = 4.29;
                 break;
             case 3:
-                valorC = "4,13";
+                valorC = 4.13;
                 break;
             case 4:
-                valorC = "6.06";
+                valorC = 6.06;
                 break;
             case 5:
-                valorC = "5.76";
+                valorC = 5.76;
                 break;
             case 6:
-                valorC = "2.00";
+                valorC = 2.00;
                 break;
             default:
                 System.out.println("Combustível invalido");
                 break;
         }
 
-        Double valorCD = Double.parseDouble(valorC);
-
         kmLUTotal = tanque * kmLU;
 
         kmLRTotal = tanque * kmLR;
 
-        gastoCombusU = valorCD * kmLUTotal;
+        gastoCombusU = valorC * kmLUTotal;
 
-        gastoCombusR = valorCD * kmLRTotal;
+        gastoCombusR = valorC * kmLRTotal;
 
         System.out.println();
 
