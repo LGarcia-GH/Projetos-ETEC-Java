@@ -7,12 +7,12 @@ public class Aula15 {
 
         double numero, soma = 0;
 
-        System.out.println("Digite um número ou Zero para parar:" );
+        System.out.println("Digite um Número ou 0 para parar:" );
         numero = ler.nextDouble();
 
         while(numero != 0) {
             soma += numero;
-            
+
             System.out.println("Digite um número ou Zero para parar:" );
             numero = ler.nextDouble();
         }
